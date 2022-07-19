@@ -84,7 +84,6 @@ while user.life_points > 0 && (player1.life_points > 0 || player2.life_points > 
   enemies.each do |player|
     if player.life_points <= 0
       puts " "
-      player.show_state
     else
       puts " "
       player.attacks(user)

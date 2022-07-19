@@ -22,7 +22,7 @@ puts" "
 
 my_game = Game.new(user_name)
 
-puts "On va te mettre direct dans le bain recrue. Voici tes adversaires #{my_game.enemies.join(", ")}"
+puts "On va te mettre direct dans le bain recrue. Voici tes adversaires #{my_game.enemies.player_name.join(", ")}"
 
 while my_game.is_still_ongoing? == true
   my_game.show_players
